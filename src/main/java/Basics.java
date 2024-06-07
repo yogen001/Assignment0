@@ -272,7 +272,7 @@ public class Basics {
 
 		// Testing pattern
 		System.out.println("Pattern for 5:");
-		basics.pattern(90);
+		basics.pattern(50);
 
 		// Testing findFirstOccurence
 		System.out.println("First occurrence of 3 in array: " + basics.findFirstOccurence(array, 3));
