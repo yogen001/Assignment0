@@ -177,18 +177,7 @@ public class Basics {
 		return count;
 	}
 	public int rowCount(String[] array) {
-		int row = 1;
-		int k = 0;
-
-		for (int i = 1; k< array.length; i++) {
-
-			for (int j = 1; j<= i && k<array.length;j++,k++) {
-
-			}
-			row = i;
-
-		}
-		return row;
+        return (int) Math.ceil((-1 + Math.sqrt(1 + 8 * array.length)) / 2);
 	}
 
 	public void pattern( int n ) {
@@ -271,8 +260,8 @@ public class Basics {
 		System.out.println("Occurrences of 3 in array: " + basics.findNumberOfOccurrences(array, 3));
 
 		// Testing pattern
-		System.out.println("Pattern for 5:");
-		basics.pattern(50);
+		System.out.println("Pattern for 90:");
+		basics.pattern(90);
 
 		// Testing findFirstOccurence
 		System.out.println("First occurrence of 3 in array: " + basics.findFirstOccurence(array, 3));
